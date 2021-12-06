@@ -1,0 +1,50 @@
+[gd_scene format=2]
+
+[node name="Planning" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0.333333, 0.0941176, 0.0941176, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GridContainer" type="GridContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+columns = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Races" type="RichTextLabel" parent="GridContainer"]
+margin_right = 340.0
+margin_bottom = 600.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Races:
+Bantha: Born with scale and skin, these lizard kin were born with no DNA and no right to mutate, they must change their genome by pure force of will."
+
+[node name="Classes" type="RichTextLabel" parent="GridContainer"]
+margin_left = 344.0
+margin_right = 684.0
+margin_bottom = 600.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Classes:
+Bantha:
+Warrior
+  > Dragoon
+  > Emerald Khansman
+  + Monk> Warrior Monk
+Monk
+   > Fifth Disciple
+       > Seventh Initiate
+	        > Legend of the Hidden Way
+   + Warrior > Warrior Monk"
